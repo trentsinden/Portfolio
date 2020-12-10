@@ -1,8 +1,11 @@
 /*** STYLESHEET FOR PERSONAL PORTFOLIO ***/
 
 /** GENERAL STYLING **/
+
 /* Google Fonts */
-/* Applies To Everything */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+/* Applies To Every Element */
 *,
 *::before,
 *::after {
@@ -11,17 +14,52 @@
   box-sizing: border-box;
 }
 
-/* HTML Styling */
+/* HTML */
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
-/* Body Styling */
+/* Body */
 body {
   overflow-x: hidden;
 }
 
-/** NAVBAR STYLING **/
-nav img {
-  height: 5rem;
+/** VISIBLE STYLING **/
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  background: black;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 6px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: darkgrey;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+}
+#intro {
+  background: url(../img/intro-bg.jpg) bottom;
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro-title {
+  padding: 0 10rem;
+}
+
+.intro-title h1 {
+  color: white;
+  font: 100 11rem "Fredoka One", cursive;
+  text-shadow: 3px 3px 6px white;
 }
