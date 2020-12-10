@@ -1,0 +1,27 @@
+/*** STYLESHEET FOR PERSONAL PORTFOLIO ***/
+
+/** GENERAL STYLING **/
+/* Google Fonts */
+/* Applies To Everything */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML Styling */
+html {
+  font-size: 100%;
+}
+
+/* Body Styling */
+body {
+  overflow-x: hidden;
+}
+
+/** NAVBAR STYLING **/
+nav img {
+  height: 5rem;
+}
