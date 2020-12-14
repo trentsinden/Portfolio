@@ -3,15 +3,15 @@
 /** GENERAL STYLING **/
 
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand&display=swap");
 
 /* Applies To Every Element */
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* HTML */
@@ -22,6 +22,7 @@ html {
 
 /* Body */
 body {
+  background: #252627;
   overflow-x: hidden;
 }
 
@@ -29,37 +30,97 @@ body {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  background: black;
+  background: #252627;
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: #d0382a;
   border-radius: 6px;
   height: 200px;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: darkgrey;
+  background: #edf2f4;
 }
 
 /* Header */
 header {
-  display: flex;
   align-items: center;
-}
-#intro {
-  background: url(../img/intro-bg.jpg) bottom;
-  background-size: cover;
+  display: flex;
   height: 100vh;
+  padding: 0 8rem;
 }
 
-.intro-title {
-  padding: 0 10rem;
+.landing-page-text h1 {
+  color: #edf2f4;
+  cursor: context-menu;
+  font: 100 4.5rem "Fredoka One", cursive;
 }
 
-.intro-title h1 {
-  color: white;
-  font: 100 11rem "Fredoka One", cursive;
-  text-shadow: 3px 3px 6px white;
+.landing-page-text span {
+  display: inline-block;
+}
+
+span.name {
+  color: #d0382a;
+}
+
+span.m-left {
+  margin-left: -1rem;
+}
+
+.landing-page-text p {
+  color: #8d99ae;
+  font: 500 1.1rem "Quicksand", sans-serif;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+}
+
+.landing-page-text a {
+  background-color: none;
+  border: 0.2rem solid #d0382a;
+  color: #d0382a;
+  display: inline-block;
+  font: 900 1rem "Quicksand", sans-serif;
+  letter-spacing: 0.15rem;
+  margin-top: 3rem;
+  overflow: hidden;
+  padding: 1rem 3rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.landing-page-text a:hover {
+  color: #edf2f4;
+}
+
+.landing-page-text a::before {
+  background-color: #d0382a;
+  content: "";
+  height: 0%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing-page-text a:hover::before {
+  height: 100%;
+}
+
+.landing-page-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.landing-page-img img {
+  height: auto;
+  width: 100%;
 }
