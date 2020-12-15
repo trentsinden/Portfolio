@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
     <script
       src="https://kit.fontawesome.com/626ae7754c.js"
       crossorigin="anonymous"
@@ -75,10 +76,81 @@
     </header>
 
     <!-- Projects -->
-    <section id="projects"></section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="work">
+        <img class="anim" src="./img/cedarwood-project.jpg" alt="project img" />
+        <img
+          class="anim"
+          src="./img/underhills-project.jpg"
+          alt="project img"
+        />
+        <img class="anim" src="./img/weather-project.jpg" alt="project img" />
+      </div>
+    </section>
 
     <!-- Skills -->
-    <section id="skills"></section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="set">
+          <span class="fas fa-globe"></span>
+          <h3>Web Development</h3>
+          <div class="list">
+            <label>HTML</label>
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="list">
+            <label>CSS</label>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="list">
+            <label>JavaScript</label>
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="list">
+            <label>PHP</label>
+            <i class="fab fa-php"></i>
+          </div>
+        </div>
+        <div class="set">
+          <span class="fas fa-tools"></span>
+          <h3>Frameworks</h3>
+          <div class="list">
+            <label>Laravel</label>
+            <i class="fab fa-laravel"></i>
+          </div>
+          <div class="list">
+            <label>Node.js</label>
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="list">
+            <label>Angular</label>
+            <i class="fab fa-angular"></i>
+          </div>
+          <div class="list">
+            <label>Bootstrap</label>
+            <i class="fab fa-bootstrap"></i>
+          </div>
+        </div>
+        <div class="set">
+          <span class="fas fa-mobile-alt"></span>
+          <h3>Mobile Application</h3>
+          <div class="list">
+            <label>Android</label>
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="list">
+            <label>IOS</label>
+            <i class="fab fa-apple"></i>
+          </div>
+          <div class="list">
+            <label>React</label>
+            <i class="fab fa-react"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Message -->
     <section id="message"></section>
@@ -92,5 +164,10 @@
     <script src="./js/script.js"></script>
     <script src="./js/ScrollMagic.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
+
+    <script type="text/javascript">
+      window.sr = ScrollReveal();
+      sr.reveal(".anim");
+    </script>
   </body>
 </html>
